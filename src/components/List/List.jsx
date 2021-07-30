@@ -1,4 +1,4 @@
-import { ListItem } from './ListItem';
+import { ListItem } from '../ListItem/ListItem';
 import PropTypes from 'prop-types';
 import './List.css';
 
