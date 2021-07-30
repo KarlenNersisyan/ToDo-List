@@ -23,6 +23,7 @@
 .enableBtn {
   background: #7f8ff4;
   cursor: pointer;
+  margin: 20px;
 }
 .enableBtn:hover {
   background: #6c7ff2;
@@ -34,4 +35,15 @@
 .disableBtn {
   background-color: rgb(207, 204, 204);
   cursor: not-allowed;
+  margin: 20px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }

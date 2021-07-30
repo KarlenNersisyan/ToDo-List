@@ -1,12 +1,14 @@
 .mainInput {
-  width: 360px;
+  max-width: 100%;
+  width: 400px;
   background: #fff;
   color: #a3a3a3;
   font: inherit;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 3px grey;
   border: 0;
+  border-radius: 50px;
   outline: 0;
-  padding: 22px 18px;
+  padding: 10px 35px;
 }
 
 .todoListInput {

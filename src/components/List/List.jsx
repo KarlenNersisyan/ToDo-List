@@ -10,7 +10,7 @@ export function List({ countActive, countAll, todos, ...handlers }) {
           return <ListItem key={todo.id} todo={todo} handlers={handlers} />;
         })}
         <div className="list-footer">
-          <b>{countActive}</b> active / <b>{countAll}</b> All todos
+          <b>{countActive}</b> Active / <b>{countAll}</b> All 
           <span
             className="clearCompleted"
             onClick={handlers.handleClearAllCompleted}

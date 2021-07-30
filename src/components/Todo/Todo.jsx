@@ -122,23 +122,27 @@ export default class Todo extends Component {
 
     return (
       <section className="container">
-        <h1>Todo App</h1>
-        <header>
-          <Input
-            name={INPUT_TYPES.mainInput}
-            value={todoInput}
-            onChange={this.handleInputChange}
-          />
-          <Button
-            className={classNames(
-              'addBtn',
-              { disableBtn: isInputEmpty },
-              { enableBtn: !isInputEmpty }
-            )}
-            handleClick={this.handleAddTodo}
-            text="Add Todo"
-            isDisable={isInputEmpty}
-          />
+        <h1> --- TodoList ---</h1>
+        <header className="wrapper">
+          <div>
+            <Input
+              name={INPUT_TYPES.mainInput}
+              value={todoInput}
+              onChange={this.handleInputChange}
+            />
+          </div>
+          <div className="btnWrapper">
+            <Button
+              className={classNames(
+                'addBtn',
+                { disableBtn: isInputEmpty },
+                { enableBtn: !isInputEmpty }
+              )}
+              handleClick={this.handleAddTodo}
+              text="Add Todo"
+              isDisable={isInputEmpty}
+            />
+          </div>
         </header>
         <FilterButtons
           status={filterStatus}
@@ -158,6 +162,7 @@ export default class Todo extends Component {
             handleClearAllCompleted={this.handleClearAllCompleted}
           />
         </main>
+        <h4> © 2021 ToDo-List. All Rights Reserved. </h4>
       </section>
     );
   }

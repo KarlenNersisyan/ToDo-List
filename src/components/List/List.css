@@ -16,10 +16,11 @@
 .list-footer {
   border-top: 2px solid rgba(0, 0, 0, 0.3);
   padding: 12px;
+  
 }
 .clearCompleted {
   float: right;
-  text-decoration: underline;
+  color: red;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 20px;
 }
